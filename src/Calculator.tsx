@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import styles from "./Calculator.module.css";
 
+/**
+ * 
+ * @returns {JSX.Element} The rendered Calculator component
+ */
 const Calculator: React.FC = () => {
   // State for setting dog name
   const [dogName, setDogName] = useState("");
@@ -9,9 +13,19 @@ const Calculator: React.FC = () => {
   // State for setting dog age
   const [dogAge, setDogAge] = useState<number | null>(null);
 
-  // Checks if string is a valid number
+  /**
+   * Checks if string is a valid number
+   * 
+   * @param {string} num - The string to check
+   * @returns {boolean} True if the string is a valid number, false if not
+   */
   const isNumber = (num: string): boolean => /^\d+$/.test(num);
 
+  /**
+   * Handles the form submission and calculates age in dog years
+   * 
+   * @param {React.FormEvent<HTMLFormElement>} event - The form submission event 
+   */
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     // Prevents page from refreshing when button is clicked
     event.preventDefault();
@@ -24,6 +38,10 @@ const Calculator: React.FC = () => {
     }
   };
 
+  /**
+   * Handles changes to the human age input
+   * @param {React.ChangeEvent<HTMLInputElement>} event - Human age input change event 
+   */
   const handleAgeChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ): void => {
