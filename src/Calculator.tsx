@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./Calculator.module.css";
 
 const Calculator: React.FC = () => {
   // State for setting dog name
@@ -38,9 +39,9 @@ const Calculator: React.FC = () => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className={styles.calculator}>
+      <form onSubmit={handleSubmit} className={styles.calculatorForm}>
+        <div className={styles.formGroup}>
           <label htmlFor="name">Dog Name</label>
           <input
             type="text"
@@ -52,7 +53,7 @@ const Calculator: React.FC = () => {
             }
           ></input>
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label htmlFor="age">Human Age</label>
           <input
             type="number"
@@ -64,12 +65,22 @@ const Calculator: React.FC = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      <img
+        src="src/assets/farmer.png"
+        alt="farmer"
+        className={styles.image}
+      ></img>
+      <img
+        src="src/assets/stardewdog.webp"
+        alt="dogpic"
+        className={styles.image}
+      ></img>
       {dogAge && (
         <h2>
           {dogName ? dogName : "This dog"} is {dogAge} years old in dog years!
         </h2>
       )}
-    </>
+    </div>
   );
 };
 
