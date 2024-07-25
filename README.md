@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Human Age to Dog Age Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to convert human age to dog age using a specific conversion method. 
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **_Real-time Calculations_**: Enter a human age to see the equivalent dog age.
+- **_Input Validations_**: Ensures valid numbers for accurate conversions.
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to set up and run the project locally.
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. **Clone the Repository**
+
+```bash
+git clone git@github.com:izzyhymas/human-age-to-dog-age.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Navigate to the Project Directory**
+
+```bash
+cd human-age-to-dog-age
+```
+
+3. **Install Dependencies**
+
+```bash
+npm install
+```
+
+### Running the Application
+
+1. **Start the Development Server**
+
+```bash
+npm run dev
+```
+
+### Open in Browser
+Click the local host link on the npm run dev tab.
+
+### Everything should be up and running now!
