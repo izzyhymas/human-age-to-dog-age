@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Calculator.module.css";
+import farmer from "./assets/farmer.png";
+import dogImage from "./assets/stardewdog.webp";
 
 /**
  * 
@@ -84,12 +86,12 @@ const Calculator: React.FC = () => {
         <button type="submit">Submit</button>
       </form>
       <img
-        src="src/assets/farmer.png"
+        src={farmer}
         alt="farmer"
         className={styles.image}
       ></img>
       <img
-        src="src/assets/stardewdog.webp"
+        src={dogImage}
         alt="dogpic"
         className={styles.image}
       ></img>
