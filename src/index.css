@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: "Retro";
-  src: var(--kindly-rewind-font-url) format("truetype")
+  src: url("/src/assets/fonts/kindly-rewind-font/KindlyRewind-BOon.ttf");
 }
 
 a {
